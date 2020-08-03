@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/me/me",
+    "pages/set/set",
+    "pages/check/check",
+    "pages/actor/actor",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小天气",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#5599FF",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "天气",
+      "iconPath":"./icon/weather/weather.png",
+      "selectedIconPath":"./icon/weather/weather.png"
+    },
+    {
+      "pagePath": "pages/set/set",
+      "text": "设置",
+      "iconPath":"./icon/set.png",
+      "selectedIconPath":"./icon/set.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "我",
+      "iconPath":"./icon/me.png",
+      "selectedIconPath":"./icon/me.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

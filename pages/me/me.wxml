@@ -1,0 +1,11 @@
+<view class="head">
+  <open-data type="userAvatarUrl"></open-data>
+</view>
+<view class="name">
+  <open-data type="userNickName"></open-data>
+</view>
+<view class="btn">
+  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="background-color:#99CCCC;margin-bottom:5px;">授权登录</button>
+  <button open-type="share" style="background-color:#99CCCC">分享给好友</button>
+</view>
+<view class="check" bindtap="check_Event">检查设置更新　　　　　　　　　　　></view>

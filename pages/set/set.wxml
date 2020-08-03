@@ -1,0 +1,20 @@
+<view class="main">
+  <view class="top">
+    <view>
+      <image src="../../images/title.png"></image>
+      <view>My Weather 1.1.0</view>
+    </view>
+  </view>
+  <view class="set">
+    <view class="a" bindtap="zhuti_Event">主题设置　　　　　　　　　　　</view>
+    <view class="a" >夜间模式　　　　　　　　<switch bindchange="switchChange" color ="#99CCCC" class="switch"/></view>
+    <view class="a" bindtap="view_Event">观看指南　　　　　　　　　　　</view>
+  </view>
+  <view class="set">
+    <view class="a" bindtap="data_Event">数据来源　　　　　　　　　　　</view>
+    <view class="a" bindtap="actor_Event">关于作者　　　　　　　　　　　</view>
+    <view class="a" bindtap="question_Event">问题反馈　　　　　　　　　　　</view>
+  </view>
+</view>
+
+<!-- <contact-button type="default-dark" size="20" session-from="weapp"></contact-button> -->

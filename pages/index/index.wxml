@@ -1,0 +1,49 @@
+<view class="main">
+  <view class="find-box">
+    <input bindinput="find_Event" type="text" placeholder="请输入城市名称"></input>
+    <view bindtap="click_Event" class="find">查询</view>
+  </view>
+  <view class="weather1" style="width:90%;height:250px;background-image:url('../../images/bgimage.jpeg')">
+    <view class="top"></view>
+    <view class="wether">{{currentTem}}°C</view>
+    <view class="city">{{currentCity}}</view>
+    <view class="tips">{{currentWin}}　{{currentSpeed}}/空气质量　{{currentAir}}</view>
+  </view>
+  <view class="day">
+    <view  class="sun">
+      <view>{{todaySunrise}}</view>
+      <view>可看日出</view>
+    </view>
+    <view class="today">
+      <view>{{currentTem1}}°/{{currentTem2}}°</view>
+      <view>今天·{{currentWea}}天</view>
+    </view>
+    <view class="night">
+      <view>{{todaySunset}}</view>
+      <view>可看日落</view>
+    </view>
+  </view>
+  <view class="Tip">
+    <view>{{currentTip}}</view>
+  </view>
+  <view class="time">
+    <view class="info-list">
+      <swiper indicator-dots='true'>
+          <block wx:for="{{arr}}" wx:key="index">
+            <swiper-item >
+              <view class="item" >
+                  <view class="item-hours">{{item.hours}}</view>
+                  <view>
+                    <image src="../../icons/{{item.wea_img}}.png"></image>
+                  </view>
+                  <view style="color:#666666">{{item.wea}}</view>
+                  <view style="color:#666666">{{item.tem}}°C</view>
+                  <view style="color:#666666">吹　{{item.win}}</view>
+              </view>
+            </swiper-item >
+          </block>
+      </swiper>
+    </view>
+  </view>
+  <view class="finally"></view>
+</view>

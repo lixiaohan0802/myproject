@@ -1,0 +1,20 @@
+.head{
+  width: 90%;
+  height: 25%;
+  margin: 0 auto;
+}
+.name{
+  text-align: center;
+  margin: 5px auto;
+}
+.check{
+  width: 90%;
+  height: 30px;
+  margin-top: 10px;
+  border:1px solid gray;
+  border-radius: 25px;
+  padding:5px 10px;
+  text-align: left;
+  line-height: 30px;
+  color: gray;
+}

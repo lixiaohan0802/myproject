@@ -1,0 +1,13 @@
+<view class="main">
+  <view class="set">
+      <view class="a">作者：iKnow</view>
+      <view class="a">微信：L942677</view>
+      <view class="a">知识星球“一起学习”</view>
+  </view>
+    <view class="set">
+      <view class="a">新浪博客：叁叁</view>
+      <view class="a">网易云：apolgoy</view>
+      <view class="a" bindtap="pay_Event">赞赏</view>
+  </view>
+  <view class="finally"></view>
+</view>
